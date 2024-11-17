@@ -5,9 +5,8 @@ ExternalProject_Add(pbc_sig
     PREFIX ${CMAKE_SOURCE_DIR}/deps
     DOWNLOAD_NAME pbc_sig-0.0.8.tar.gz
     DOWNLOAD_NO_PROGRESS 1
-    URL https://osp-1257653870.cos.ap-guangzhou.myqcloud.com/FISCO-BCOS/deps/pbc/pbc_sig-0.0.8.tar.gz
-        https://crypto.stanford.edu/pbc/sig/files/pbc_sig-0.0.8.tar.gz
-    URL_HASH SHA256=7a343bf342e709ea41beb7090c78078a9e57b833454c695f7bcad2475de9c4bb
+    URL https://github.com/mag1c1an1/pbc_sig/releases/download/v0.0.8/pbc_sig-0.0.8.tar.gz
+    URL_HASH SHA256=f9c141ece84c1591c11fea326084f2ffcdb94ceba9034e2f65add5eef5224c66
     BUILD_IN_SOURCE 1
     PATCH_COMMAND ${PBC_SIG_PATCH}
     CMAKE_COMMAND ${CMAKE_COMMAND}
